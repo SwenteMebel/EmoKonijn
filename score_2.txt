@@ -1,0 +1,4 @@
+<?php
+echo "Hoe vaak de score 2 voorkomt ";
+
+?>

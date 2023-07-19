@@ -1,0 +1,5 @@
+
+<?php
+echo "Hoe vaak de score 0 voorkomt ";
+
+?>
