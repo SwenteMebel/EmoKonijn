@@ -1,5 +1,5 @@
 <?php
-include_once "include/emokonijn.php";
+
 include_once "include/html_begin.php";
 include_once "include/html_tags.php";
 include_once "include/html_einde.php";
@@ -18,14 +18,18 @@ include_once "include/html_einde.php";
     <link rel="stylesheet" href="/EmoKonijn/css/main.css">
 </head>
 <body>
-<main class="">
-    <div class="bovenRij"></div>
-    <div class="onderRij"></div>
-    <hr>
+<main>
+    <div class="konijnen">
+        <div class="bovenRij"><?php include "../EmoKonijn/include/emokonijnBoven.php";?></div>
+        <div class="onderRij"></div>
+    </div>
+    
     <form>
     <label>Highscore </label><input type='text' name='highscore' id='heightscore' placeholder='De highscore is'disabled><br>
-    <label>Score </label><input type='number' name='score' id='score' placeholder='Hier komt je score'disabled><br> 
+    <label>Score </label><input type='number' name='score' id='score' placeholder='Hier komt je score'disabled> <br>
+    <input type='submit' value="Vernieuw" onclick="window.location.reload">
     </form>
+
     <table>
         <tr><th>Hoevaak komen de scores voor?</th></tr>
         <tr>
@@ -50,7 +54,7 @@ include_once "include/html_einde.php";
             <td><?php include_once "../EmoKonijn/data/score_14.txt";?></td>
         </tr>
     </table>
-    <hr>
+  
 </main>
     <script src="" sync defer></script>
 </body>
