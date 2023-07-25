@@ -3,6 +3,7 @@ html{
     justify-content: center;
     margin: 0;
     font-family: monospace;
+  
 }
 
 .bovenRij{
@@ -66,4 +67,11 @@ border: 0;
 border: 1.5px solid black;
 border-radius: 8px;
 padding: 5px;
+}
+
+.groen {
+    background-color: rgb(64, 214, 64);
+}
+.rood{
+    background-color: rgb(225, 34, 34);
 }

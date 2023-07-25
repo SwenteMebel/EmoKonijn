@@ -1,4 +1,1 @@
-<?php
-echo "Hoe vaak de score 6 voorkomt ";
-
-?>
+0

@@ -1,9 +1,3 @@
-<?php
-
-include_once "include/html_begin.php";
-include_once "include/html_tags.php";
-include_once "include/html_einde.php";
-?>
 
 <!DOCTYPE html>
 
@@ -21,37 +15,38 @@ include_once "include/html_einde.php";
 <main>
     <div class="konijnen">
         <div class="bovenRij"><?php include "../EmoKonijn/include/emokonijnBoven.php";?></div>
-        <div class="onderRij"></div>
+        <div class="onderRij"><?php include "../EmoKonijn/include/matchBekijken.php";?></div>
     </div>
     
     <form>
-    <label>Highscore </label><input type='text' name='highscore' id='heightscore' placeholder='De highscore is'disabled><br>
-    <label>Score </label><input type='number' name='score' id='score' placeholder='Hier komt je score'disabled> <br>
+    <label>Highscore</label> <?php include_once "../EmoKonijn/data/highscore.txt";?><br>
+    <?php include_once "include/aantalMatches.php";?> <br>
+    <?php include_once "include/aantalMatches.php";?> <br>
     <input type='submit' value="Vernieuw" onclick="window.location.reload">
     </form>
-
     <table>
+
         <tr><th>Hoevaak komen de scores voor?</th></tr>
         <tr>
-            <td><?php include_once "../EmoKonijn/data/score_0.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_1.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_2.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_3.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_4.txt";?></td>
+            <td>De score 0 komt <?php include_once "../EmoKonijn/data/score_0.txt";?> keer voor.</td>
+            <td>De score 1 komt <?php include_once "../EmoKonijn/data/score_1.txt";?> keer voor.</td>
+            <td>De score 2 komt <?php include_once "../EmoKonijn/data/score_2.txt";?> keer voor.</td>
+            <td>De score 3 komt <?php include_once "../EmoKonijn/data/score_3.txt";?> keer voor. </td>
+            <td>De score 4 komt <?php include_once "../EmoKonijn/data/score_4.txt";?> keer voor.</td>
         </tr>
         <tr>
-            <td><?php include_once "../EmoKonijn/data/score_5.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_6.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_7.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_8.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_9.txt";?></td>
+            <td>De score 5 komt <?php include_once "../EmoKonijn/data/score_5.txt";?> keer voor.</td>
+            <td>De score 6 komt <?php include_once "../EmoKonijn/data/score_6.txt";?> keer voor.</td>
+            <td>De score 7 komt <?php include_once "../EmoKonijn/data/score_7.txt";?> keer voor.</td>
+            <td>De score 8 komt <?php include_once "../EmoKonijn/data/score_8.txt";?> keer voor.</td>
+            <td>De score 9 komt <?php include_once "../EmoKonijn/data/score_9.txt";?> keer voor.</td>
         </tr>
         <tr>
-            <td><?php include_once "../EmoKonijn/data/score_10.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_11.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_12.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_13.txt";?></td>
-            <td><?php include_once "../EmoKonijn/data/score_14.txt";?></td>
+            <td>De score 10 komt <?php include_once "../EmoKonijn/data/score_10.txt";?> keer voor.</td>
+            <td>De score 11 komt <?php include_once "../EmoKonijn/data/score_11.txt";?> keer voor.</td>
+            <td>De score 12 komt <?php include_once "../EmoKonijn/data/score_12.txt";?> keer voor.</td>
+            <td>De score 13 komt <?php include_once "../EmoKonijn/data/score_13.txt";?> keer voor.</td>
+            <td>De score 14 komt <?php include_once "../EmoKonijn/data/score_14.txt";?> keer voor.</td>
         </tr>
     </table>
   

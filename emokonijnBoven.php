@@ -1,18 +1,19 @@
 <?php
+//DE KONIJNEN IN DE BOVENSTE RIJ.
+
 
 class konijntje {
     //Properties
-    
     private $eenArray;
 
-    public function __construct($emoties) {
-        $this->eenArray = $emoties;
+    public function __construct($emotiesArrayBoven) {
+        $this->eenArray = $emotiesArrayBoven;
     }
 
     public function loopDoorArray(){
-        //Wil weten hoeveel er in een array zitten 
+        //Wil weten hoeveel er in een array zitten. 
         $arrayLengte = count($this->eenArray);
-
+        // Zet bij elk konijn een nieuwe emotie.
         for($i=0; $i < $arrayLengte; $i++){
             echo "<pre>";
             echo "()_() <br>";
@@ -24,11 +25,11 @@ class konijntje {
     }
 
 }
+// emoties van konijnen
+$emotiesArrayBoven = array("(o.o)", "(>.<)", "(&.&)", "(?.?)", "(/./)", "($.$)", "(=.=)", "(0.=)", "(~.~)", "(E.E)", "(^.^)", "(>.>)", "(X.X)"); 
+shuffle($emotiesArrayBoven);
 
-$emoties = array("(o.o)", "(>.<)", "(&.&)", "(?.?)", "(/./)", "($.$)", "(=.=)", "(0.=)", "(~.~)", "(E.E)", "(^.^)", "(>.>)", "(X.X)"); 
-shuffle($emoties);
-
-$konijn = new konijntje($emoties);
+$konijn = new konijntje($emotiesArrayBoven);
 $konijn -> loopDoorArray();
 
 

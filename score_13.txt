@@ -1,4 +1,1 @@
-<?php
-echo "Hoe vaak de score 13 voorkomt ";
-
-?>
+0
